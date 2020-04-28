@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Product Landing Page</title>
+	<link rel="stylesheet" href="productldp.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="split left">
+		
+	</div>
+	<div class="split right">
+
+	</div>
+	<div class="box">
+		<img class="logoimage" src="nikelogo.jpg" width="50" height="30">
+		<h1 class="brandname">NIKE</h1>
+		<ul class="navigation">
+                    <a><li><button class="btn1" type="button">Home</button></li></a>
+                    <a><li><button class="btn1" type="button">Featured</button></li></a>
+                    <a><li><button class="btn1" type="button">Product</button></li></a>
+                    <a><li><button class="btn1" type="button">About Us</button></li></a>
+                    <a><li><button class="btn1" type="button">Contact Us</button></li></a>
+                </ul>
+		<h1 class="prodname"><strong>NIKE SHOES &trade;</strong></h1>
+		<p class="des">Wide range of variety of regular styling,</p><p class="des">cushioned footbed sport shoes</p>
+		<br>
+		<button class="btn" type="button"><strong class="buynow">BUY  NOW<strong></button>
+			<br>
+		<div class="social-menu">
+  			<ul>
+    			<li><a href=""><i class="fa fa-facebook"></i></a></li>
+    			<li><a href=""><i class="fa fa-twitter"></i></a></li>
+    			<li><a href=""><i class="fa fa-instagram"></i></a></li>
+    			<li><a href=""><i class="fa fa-youtube"></i></a></li>
+    			<li><a href=""><i class="fa fa-linkedin"></i></a></li>
+  			</ul>
+		</div>
+		<div class="box2">
+			<center><div id="value"></div></center>
+		</div>
+		<img class="image" src="nikeshoes.jpg" height="360" width="360">
+
+		<input type="Range" min="20" max="40" value="30" class="slider" id="slider">
+		<br>
+		<p class="entersize"><strong>Select Size<strong></p>
+		<script type="text/javascript">
+			var slider=document.getElementById("slider");
+			var val=document.getElementById("value");
+			val.innerHTML=slider.value;
+			slider.oninput=function(){
+				val.innerHTML=this.value;
+			}
+		</script>
+
+	</div>
+
+</body>
+</html>
